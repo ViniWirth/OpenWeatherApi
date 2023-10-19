@@ -1,0 +1,218 @@
+/* Geral */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'AR One Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url(../imgs/background.jpg);
+}
+
+header{
+  margin-bottom: 2.5vw;
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  width: 6.5vw;
+}
+
+/*.hide {
+  display: none !important;
+}*/
+
+.all{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+}
+
+.container {
+  border: solid black 0.1vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2rem;
+  color: #000000;
+  border-radius: 1rem;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10vw;
+}
+
+/* Form */
+.form h3 {
+  margin-bottom: 1rem;
+}
+
+.form-input-container {
+  display: flex;
+}
+
+.form input {
+  padding: 0.8rem;
+  border: none;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 0.8rem;
+  min-width: 50px;
+  margin-left: 8px;
+  background-color: #8dd0f5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Clima */
+#weather-data,
+#error-message,
+#loader,
+#suggestions {
+  border-top: 1px solid #fff;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+#weather-data h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+#weather-data h2 i {
+  font-size: 1rem;
+}
+
+#weather-data span {
+  margin: 0.6rem;
+}
+
+#temperature {
+  font-size: 4rem;
+}
+
+#country {
+  height: 15px;
+}
+
+#description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.6rem 0;
+}
+
+#description {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#details-container #humidity {
+  margin: 0.6rem;
+  padding: 0.6rem;
+}
+
+/* Loader */
+#loader i {
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#footerDiv{
+  margin-left: 5vw;
+  font-size: 85%;
+  margin-top: 1vw;
+}
+
+footer {
+  color: #ffffff;
+  padding: 20px;  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-top: solid rgba(0, 0, 0, 0.568) 0.05vw;
+  font-weight: bold;
+  background-color: black;
+}
+
+.containerFooter {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  margin-left: 10px;
+}
+
+ul li:first-child {
+  margin-left: 0;
+}
+
+ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media screen and (max-width:1300px){
+  .logo{
+    width: 10vw;
+  }
+  footer {
+    text-align: center;
+  }
+  
+}
+
+@media screen and (max-width:900px){
+  .logo{
+    width: 14.5vw;
+  }
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:768px){
+  .logo{
+    width: 18vw;
+  }
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:500px){
+  .logo{
+    width: 23vw;
+  }
+  footer {
+    text-align: center;
+  }
+}
